@@ -43,8 +43,7 @@
               <strong>Enter</strong> to see standard available nodes.
             </li>
             <li>
-              3. Ingest commands like <code class="cmd-code">summary</code>,
-              <code class="cmd-code">skills</code>,
+              3. Ingest commands like <code class="cmd-code">skills</code>,
               <code class="cmd-code">projects</code>,
               <code class="cmd-code">experience</code>, or
               <code class="cmd-code">education</code> to pull up files.
@@ -68,6 +67,9 @@
               id="console-input"
               autofocus
               autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              inputmode="text"
             />
           </div>
         </div>
@@ -108,7 +110,7 @@
           </p>
         </div>
 
-        <!-- 3. PROJECTS NODE (CONTAINS THE EASY TOKEN) -->
+        <!-- 3. PROJECTS NODE -->
         <div class="locked-asset hidden" id="log-projects">
           <h2>[✖] node://compiled_portfolio_projects</h2>
 
@@ -279,7 +281,7 @@
           </div>
         </div>
 
-        <!-- 6. CONTACT NODE (SECURED BY STATE GATE) -->
+        <!-- 6. CONTACT NODE -->
         <div class="locked-asset hidden" id="log-contact">
           <h2>[✖] node://comms_uplink [CRITICAL INFRASTRUCTURE DECRYPTED]</h2>
           <p>
@@ -310,35 +312,18 @@
           </p>
         </div>
 
-        <!-- 7. PHOTO NODE (SECURED BY STATE GATE) -->
+        <!-- 7. PHOTO NODE -->
         <div class="locked-asset hidden" id="log-photo">
           <h2>
             [✖] node://personnel_image [CRITICAL INFRASTRUCTURE DECRYPTED]
           </h2>
-          <div
-            style="
-              display: flex;
-              gap: 20px;
-              align-items: center;
-              flex-wrap: wrap;
-            "
-          >
+          <div class="photo-flex-wrapper">
             <img
-              src="your-photo-filename.jpg"
+              src="./headshot.jpeg"
               alt="Alexandra Blandon"
-              style="
-                width: 180px;
-                height: 180px;
-                object-fit: cover;
-                border: var(--border-ui);
-                border-radius: 4px;
-                background-color: var(--console-bg);
-                text-align: center;
-                color: var(--text-muted);
-                line-height: 180px;
-              "
+              class="profile-photo"
             />
-            <div style="flex: 1; min-width: 250px">
+            <div class="photo-meta">
               <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem">
                 <strong>Operator Token:</strong> verified_blandon_cruz<br />
                 Biometric ledger online. Security clearance verified.

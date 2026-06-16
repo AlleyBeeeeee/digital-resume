@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
       : "shift matrix";
   });
 
-  // --- CONSOLE RE-RENDER MATRIX ---
   const consoleInput = document.getElementById("console-input");
   const consoleOutput = document.getElementById("console-output");
 

@@ -27,7 +27,7 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   margin: 0;
-  padding: 40px 20px;
+  padding: 30px 15px;
   transition: all 0.3s ease;
 }
 
@@ -38,9 +38,10 @@ body {
 
 header.emo-header {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   border-bottom: 1px dashed var(--text-muted);
   padding-bottom: 25px;
+  padding-top: 45px;
 }
 
 .theme-btn {
@@ -51,7 +52,7 @@ header.emo-header {
   border: 1px solid var(--text-muted);
   color: var(--text-muted);
   padding: 6px 12px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   cursor: pointer;
   border-radius: 3px;
   transition: all 0.2s;
@@ -62,22 +63,23 @@ header.emo-header {
 }
 
 h1.title-text {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0 0 5px 0;
   letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 .subtitle {
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-transform: lowercase;
   font-weight: normal;
 }
 
 .instructions-banner {
   background-color: var(--card-bg);
-  padding: 22px;
-  margin-bottom: 30px;
+  padding: 18px;
+  margin-bottom: 25px;
   border: var(--border-ui);
   border-radius: 4px;
 }
@@ -89,13 +91,13 @@ h1.title-text {
 }
 .how-to-play {
   margin: 15px 0 5px 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .emo-list {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .emo-list li {
   margin-bottom: 6px;
@@ -106,22 +108,22 @@ h1.title-text {
   color: var(--accent);
   background: rgba(0, 0, 0, 0.2);
   padding: 2px 5px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .console-box {
   background-color: var(--console-bg);
   border: var(--border-ui);
-  padding: 20px;
+  padding: 15px;
   border-radius: 4px;
 }
 
 #console-output {
-  height: 150px;
+  height: 140px;
   overflow-y: auto;
   margin-bottom: 15px;
   white-space: pre-line;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-main);
 }
 .console-input-area {
@@ -131,8 +133,8 @@ h1.title-text {
 .console-input-area .prompt {
   font-weight: bold;
   color: var(--accent);
-  margin-right: 10px;
-  font-size: 0.9rem;
+  margin-right: 8px;
+  font-size: 0.85rem;
 }
 
 #console-input {
@@ -141,7 +143,8 @@ h1.title-text {
   border: none;
   color: var(--text-main);
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  width: 100%;
 }
 #console-input:focus {
   outline: none;
@@ -149,14 +152,14 @@ h1.title-text {
 
 .locked-asset {
   background-color: var(--card-bg);
-  padding: 25px;
-  margin-top: 25px;
+  padding: 20px;
+  margin-top: 20px;
   border: var(--border-ui);
   border-radius: 4px;
 }
 .locked-asset h2 {
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: normal;
   color: var(--accent);
 }
@@ -173,19 +176,24 @@ h1.title-text {
 }
 .project-card h3 {
   margin: 0 0 5px 0;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: normal;
+  line-height: 1.3;
 }
 .org-tag {
   color: var(--text-muted);
   margin: 0 0 10px 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
+
 .card-header {
   display: flex;
   justify-content: space-between;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .emo-link {
@@ -198,18 +206,51 @@ h1.title-text {
   border-bottom-style: solid;
 }
 
-.photo-box {
-  width: 180px;
-  height: 180px;
-  border: var(--border-ui);
+.photo-flex-wrapper {
   display: flex;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: var(--border-ui);
+  border-radius: 4px;
   background-color: var(--console-bg);
-  color: var(--text-muted);
-  font-size: 0.85rem;
+}
+
+.photo-meta {
+  flex: 1;
+  min-width: 200px;
 }
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+    font-size: 0.9rem;
+  }
+  h1.title-text {
+    font-size: 1.7rem;
+  }
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .photo-flex-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .profile-photo {
+    width: 100%;
+    height: 200px;
+  }
 }
