@@ -1,0 +1,215 @@
+:root {
+  --bg-color: #0b090f;
+  --card-bg: #14111c;
+  --text-main: #f0edf5;
+  --text-muted: #8e879a;
+  --accent: #d6bbf2;
+  --accent-glow: rgba(214, 187, 242, 0.08);
+  --console-bg: #07050a;
+  --border-ui: 1px solid #322b40;
+}
+
+body.terminal-mode {
+  --bg-color: #030305;
+  --card-bg: #0b0d12;
+  --text-main: #e2e8f0;
+  --text-muted: #64748b;
+  --accent: #b026ff;
+  --accent-glow: rgba(176, 38, 255, 0.05);
+  --console-bg: #000000;
+  --border-ui: 1px dashed #b026ff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  font-family: "SF Mono", Monaco, Consolas, Courier, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 40px 20px;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header.emo-header {
+  position: relative;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed var(--text-muted);
+  padding-bottom: 25px;
+}
+
+.theme-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  color: var(--text-muted);
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+.theme-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+h1.title-text {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+  letter-spacing: -0.5px;
+}
+.subtitle {
+  color: var(--accent);
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+.instructions-banner {
+  background-color: var(--card-bg);
+  padding: 22px;
+  margin-bottom: 30px;
+  border: var(--border-ui);
+  border-radius: 4px;
+}
+
+.banner-title {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  color: var(--accent);
+}
+.how-to-play {
+  margin: 15px 0 5px 0;
+  font-size: 0.9rem;
+}
+.emo-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.emo-list li {
+  margin-bottom: 6px;
+  list-style-type: circle;
+}
+
+.cmd-code {
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2px 5px;
+  font-size: 0.85rem;
+}
+
+.console-box {
+  background-color: var(--console-bg);
+  border: var(--border-ui);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#console-output {
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  white-space: pre-line;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+.console-input-area {
+  display: flex;
+  align-items: center;
+}
+.console-input-area .prompt {
+  font-weight: bold;
+  color: var(--accent);
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+#console-input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 1rem;
+}
+#console-input:focus {
+  outline: none;
+}
+
+.locked-asset {
+  background-color: var(--card-bg);
+  padding: 25px;
+  margin-top: 25px;
+  border: var(--border-ui);
+  border-radius: 4px;
+}
+.locked-asset h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--accent);
+}
+
+.project-card {
+  border-bottom: 1px dashed var(--border-ui);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.project-card:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.project-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.org-tag {
+  color: var(--text-muted);
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.emo-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+}
+.emo-link:hover {
+  color: var(--text-main);
+  border-bottom-style: solid;
+}
+
+.photo-box {
+  width: 180px;
+  height: 180px;
+  border: var(--border-ui);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--console-bg);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alexandra blandon // digital vault</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="emo-header">
+        <button class="theme-btn" id="modeToggle">shift matrix</button>
+        <h1 class="title-text">alexandra blandon</h1>
+        <div class="subtitle">
+          cybersecurity specialist // software engineer
+        </div>
+      </header>
+
+      <!-- SOFT PUNK CONSOLE -->
+      <section id="scavenger-hunt-console">
+        <div class="instructions-banner">
+          <p class="banner-title">✖ INDEX BRIEFING: UNLOCK THE RECORDS</p>
+          <p>
+            Standard corporate layouts feel a bit hollow, so I kept things
+            interesting. If you want to take a look at my technical skillset and
+            history, you'll have to extract the logs yourself. I left the
+            interface open for you.
+          </p>
+          <p style="color: var(--accent); font-size: 0.9rem; margin: 10px 0">
+            <strong>⚠️ SECURITY WARNING:</strong> High-value assets (Contact
+            Info & Photo) are protected behind a 2FA encryption layer. You must
+            find the bypass token hidden inside my open-source project logs to
+            unlock them.
+          </p>
+          <p class="how-to-play"><strong>// how to look around:</strong></p>
+          <ul class="emo-list">
+            <li>
+              1. Click inside the dark terminal console box below where the
+              cursor is blinking.
+            </li>
+            <li>
+              2. Type <code class="cmd-code">help</code> and press
+              <strong>Enter</strong> to see standard available nodes.
+            </li>
+            <li>
+              3. Ingest commands like <code class="cmd-code">summary</code>,
+              <code class="cmd-code">skills</code>,
+              <code class="cmd-code">projects</code>,
+              <code class="cmd-code">experience</code>, or
+              <code class="cmd-code">education</code> to pull up files.
+            </li>
+            <li>
+              4. Locate the hidden authorization token code and type it into the
+              terminal to bypass the 2FA blocks!
+            </li>
+          </ul>
+        </div>
+
+        <div class="console-box">
+          <div id="console-output">
+            [system] > console loaded. ready for operator input. type 'help' to
+            find the path.
+          </div>
+          <div class="console-input-area">
+            <span class="prompt">guest@blandon.net:~#</span>
+            <input
+              type="text"
+              id="console-input"
+              autofocus
+              autocomplete="off"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- DECRYPTED RESUME MODULES -->
+      <section id="resume-container">
+        <!-- 1. SUMMARY NODE -->
+        <div class="locked-asset hidden" id="log-summary">
+          <h2>[✖] node://profile_manifesto</h2>
+          <p>
+            Results-driven Cybersecurity Specialist and Software Engineer with
+            an extensive technical background in systems diagnostics,
+            infrastructure support, and incident response. Proven track record
+            of managing technical operations, securing endpoint environments,
+            and implementing automation to reduce operational risks. Adept at
+            navigating cross-functional, high-stakes environments—and keeping
+            things quiet when things get chaotic.
+          </p>
+        </div>
+
+        <!-- 2. SKILLS NODE -->
+        <div class="locked-asset hidden" id="log-skills">
+          <h2>[✖] node://technical_skills_matrix</h2>
+          <p style="margin-bottom: 8px">
+            <strong>Cybersecurity:</strong> Network Defense, Incident Response,
+            Malware Remediation, Endpoint Security, SIEM Log Analysis, Threat
+            Hunting
+          </p>
+          <p style="margin-bottom: 8px">
+            <strong>Programming & Automation:</strong> Python (Security
+            Automation), JavaScript, HTML, CSS, Node.js, Git/GitHub
+          </p>
+          <p style="margin-bottom: 8px">
+            <strong>Tools & Methodologies:</strong> Agile Frameworks, Systematic
+            Troubleshooting, Technical Documentation, Cross-Functional
+            Collaboration
+          </p>
+        </div>
+
+        <!-- 3. PROJECTS NODE (CONTAINS THE EASY TOKEN) -->
+        <div class="locked-asset hidden" id="log-projects">
+          <h2>[✖] node://compiled_portfolio_projects</h2>
+
+          <div class="project-card">
+            <h3>The Digital Detective Chronicles</h3>
+            <p class="org-tag">Digital Forensics Vault</p>
+            <p>
+              Developed a digital forensics portfolio documenting SIEM
+              environment labs, log auditing, memory forensics, and threat
+              hunting.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>PhishPhaser</h3>
+            <p class="org-tag">Python Security Utility</p>
+            <p>
+              Created an open-source Python utility for automated email header
+              analysis to detect phishing indicators and streamline incident
+              triage.
+            </p>
+            <p
+              style="
+                font-family: monospace;
+                font-size: 0.85rem;
+                color: var(--text-muted);
+                margin-top: 10px;
+                background: rgba(0, 0, 0, 0.3);
+                padding: 5px;
+                border-radius: 4px;
+              "
+            >
+              [LOG_DEBUG] > Ingesting header hash... Local auth token compiled:
+              <span style="color: var(--accent); font-weight: bold"
+                >bypass</span
+              >
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Hecate-Academy</h3>
+            <p class="org-tag">Technical Tracking Engine</p>
+            <p>
+              Designed a learning application to structure and track technical
+              concepts, improving documentation agility.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. EDUCATION NODE -->
+        <div class="locked-asset hidden" id="log-education">
+          <h2>[✖] node://brain_reboots</h2>
+
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Cybersecurity Fellowship</h3>
+              <span>PRESENT</span>
+            </div>
+            <p class="org-tag">The Knowledge House</p>
+            <p>
+              Completed a cybersecurity fellowship, strengthening formal
+              preparation for security-focused technical work.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Software Engineering Immersive Training Program</h3>
+              <span>2026</span>
+            </div>
+            <p class="org-tag">Per Scholas</p>
+            <p>
+              Completed immersive software engineering training, supporting
+              structured problem solving and technical communication with
+              engineering-focused teams.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="card-header">
+              <h3>CompTIA A+ Certification</h3>
+              <span>VALIDATED</span>
+            </div>
+            <p class="org-tag">CompTIA Tech Career Academy</p>
+            <p>
+              Earned CompTIA A+ certification, validating foundational technical
+              support, troubleshooting, and systems knowledge.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. EXPERIENCE NODE -->
+        <div class="locked-asset hidden" id="log-experience">
+          <h2>[✖] node://battle_records</h2>
+
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Owner & Lead Technical Specialist</h3>
+              <span>2022 - PRESENT</span>
+            </div>
+            <p class="org-tag">Circuit SHEro // Brooklyn, NY (Remote)</p>
+            <ul>
+              <li>
+                Engineered systematic diagnostic workflows for 100+ Windows and
+                macOS devices, utilizing hardware testing and log analysis to
+                achieve a 40% reduction in repair turnaround time.
+              </li>
+              <li>
+                Remediated critical software vulnerabilities and malware
+                infections for 50+ client environments, ensuring a 95%
+                successful restoration rate.
+              </li>
+              <li>
+                Optimized hardware lifecycles for 50+ systems by performing
+                component-level upgrades, extending device longevity by 3 years.
+              </li>
+              <li>
+                Delivered end-to-end remote desktop troubleshooting for 30+
+                recurring clients, increasing first-call resolution rates by 15%
+                through improved documentation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Enrollment Coordinator & Operations Specialist</h3>
+              <span>2019 - 2021</span>
+            </div>
+            <p class="org-tag">International Culinary Center // New York, NY</p>
+            <ul>
+              <li>
+                Audited sensitive onboarding and financial documentation for
+                compliance, reducing data processing errors by 15%.
+              </li>
+              <li>
+                Managed a high-volume database of 500+ records using CRM
+                software, maintaining a 99% data validation accuracy rate.
+              </li>
+              <li>
+                Applied attention to detail and structured record review
+                practices relevant to data labeling, validation, and quality
+                control workflows.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Head Operations & Catering Cook</h3>
+              <span>2010 - 2019</span>
+            </div>
+            <p class="org-tag">Cafe SFA // Saks Fifth Avenue, New York, NY</p>
+            <ul>
+              <li>
+                Directed a team of 5+ staff during high-volume shifts,
+                introducing inventory systems that reduced waste by 20%.
+              </li>
+              <li>
+                Enforced rigorous health and safety standards (HACCP), securing
+                consistent "Grade A" ratings through daily quality audits.
+              </li>
+              <li>
+                Optimized daily logistics to output 200+ meals during peak
+                hours, maintaining a 100% on-time delivery rate.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 6. CONTACT NODE (SECURED BY STATE GATE) -->
+        <div class="locked-asset hidden" id="log-contact">
+          <h2>[✖] node://comms_uplink [CRITICAL INFRASTRUCTURE DECRYPTED]</h2>
+          <p>
+            Digital channels verified for secure professional collaboration:
+          </p>
+          <p>
+            <strong>Direct Wire:</strong>
+            <a href="tel:9172160276" class="emo-link">917.216.0276</a>
+          </p>
+          <p>
+            <strong>Mail Server:</strong>
+            <a href="mailto:Alexandra.blandon@gmail.com" class="emo-link"
+              >Alexandra.blandon@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Network Path:</strong>
+            <a
+              href="https://linkedin.com/in/alexandrablandoncruz"
+              target="_blank"
+              class="emo-link"
+              >linkedin.com/in/alexandrablandoncruz</a
+            >
+          </p>
+          <p style="margin-top: 20px">
+            <strong>System Languages:</strong> English (Native) // Spanish
+            (Professional) // Dutch (Elementary / Learning)
+          </p>
+        </div>
+
+        <!-- 7. PHOTO NODE (SECURED BY STATE GATE) -->
+        <div class="locked-asset hidden" id="log-photo">
+          <h2>
+            [✖] node://personnel_image [CRITICAL INFRASTRUCTURE DECRYPTED]
+          </h2>
+          <div
+            style="
+              display: flex;
+              gap: 20px;
+              align-items: center;
+              flex-wrap: wrap;
+            "
+          >
+            <img
+              src="your-photo-filename.jpg"
+              alt="Alexandra Blandon"
+              style="
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                border: var(--border-ui);
+                border-radius: 4px;
+                background-color: var(--console-bg);
+                text-align: center;
+                color: var(--text-muted);
+                line-height: 180px;
+              "
+            />
+            <div style="flex: 1; min-width: 250px">
+              <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem">
+                <strong>Operator Token:</strong> verified_blandon_cruz<br />
+                Biometric ledger online. Security clearance verified.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
