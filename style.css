@@ -36,18 +36,19 @@ body {
   margin: 0 auto;
 }
 
+/* FIX: Changed to flexbox layout to gracefully handle alignment and wrapping */
 header.emo-header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin-bottom: 35px;
   border-bottom: 1px dashed var(--text-muted);
   padding-bottom: 25px;
-  padding-top: 45px;
 }
 
+/* FIX: Removed position absolute to prevent collision with text elements */
 .theme-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
+  align-self: flex-end; /* Keeps it to the right on desktop layouts */
   background: transparent;
   border: 1px solid var(--text-muted);
   color: var(--text-muted);
@@ -63,9 +64,9 @@ header.emo-header {
 }
 
 h1.title-text {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 400;
-  margin: 0 0 5px 0;
+  margin: 0;
   letter-spacing: -0.5px;
   line-height: 1.2;
 }
@@ -232,14 +233,23 @@ h1.title-text {
   display: none;
 }
 
+/* 📱 CORE MOBILE FIXES OVERRIDE */
 @media (max-width: 600px) {
   body {
     padding: 20px 10px;
     font-size: 0.9rem;
   }
+
+  header.emo-header {
+    gap: 10px;
+  }
+  .theme-btn {
+    align-self: flex-start;
+  }
   h1.title-text {
     font-size: 1.7rem;
   }
+
   .card-header {
     flex-direction: column;
     align-items: flex-start;
